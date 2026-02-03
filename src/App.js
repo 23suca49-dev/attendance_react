@@ -22,14 +22,14 @@ function App() {
       setRecords(response.data);
       setError(null);
     } catch (err) {
-      console.error('Error fetching records:', err);
+          console.error('Error fetching records:', err);
       setError('Failed to fetch attendance records');
     } finally {
       setLoading(false);
-    }
+     }
   };
 
-  const handleFormSubmit = () => {
+   const handleFormSubmit = () => {
     fetchRecords();
     setEditingRecord(null);
   };
